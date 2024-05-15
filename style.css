@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#gamearea {
+    width: 85vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.warrior {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: blue;
+    position: relative;
+    left: 45%;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.5, .5, .5);
+    overflow: 1;
+}
+
+.enemyWarrior {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(.5, .5, .5);
+    overflow: 2;
+}
